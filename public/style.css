@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a, button, input[type=submit] {
+  border: none;
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7ecee;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+._lang {
+  padding: 0 50px 40px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 4px;
+}
+
+@media (max-width: 600px) {
+  ._lang {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

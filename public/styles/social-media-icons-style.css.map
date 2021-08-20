@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,mBAAmB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,eAAe;EACnC,QAAQ,EAAE,IAAI;EACd,OAAO,EAAE,aAAa;EACtB,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,CAAC;EACT,IAAI,EAAE,CAAC;EACP,OAAO,EAAE,EAAE;CAcZ;;AAtBD,AAUE,mBAViB,CAUjB,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAKb;;AAjBH,AAcI,mBAde,CAUjB,KAAK,CAIH,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ;;ACRH,MAAM,EAAE,SAAS,EAAE,KAAK;EDR1B,AAAA,mBAAmB,CAAC;IAoBhB,OAAO,EAAE,IAAI;GAEhB",
+    "sources": [
+        "social-media-icons-style.scss",
+        "../mixins.scss"
+    ],
+    "names": [],
+    "file": "social-media-icons-style.css"
+}

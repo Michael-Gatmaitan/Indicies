@@ -1,0 +1,65 @@
+@import '../mixins.scss';
+
+.menu-container {
+  display: none;
+  
+  @include mobileView {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba($blue, 1), rgba($blue, .92));
+    z-index: 100;
+    padding: 0 12px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-12px);
+    transition: 0.1s ease-in;
+
+    .menu-nav {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+
+      .close-menu {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 32px;
+        }
+      }
+    }
+
+    ul {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      padding: 0;
+
+      a {
+        list-style-type: none;
+        text-decoration: none;
+        @include fontProp('Montserrat', 700, 24px);
+        
+        &:active {
+          li {
+            color: #000 !important;
+          }
+        }
+
+        li {
+          color: #fff !important;
+          margin: 0;
+          padding: 0;;
+        }
+      }
+    }
+  }
+}

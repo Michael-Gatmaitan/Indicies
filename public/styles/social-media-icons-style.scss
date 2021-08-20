@@ -1,0 +1,25 @@
+@import '../mixins.scss';
+
+.social-media-icons {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 24px;
+  padding: 0 0 40px 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  .icon {
+    width: 24px;
+    height: 24px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include mobileView {
+    display: none;
+  }
+}

@@ -1,0 +1,134 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100vw;
+  z-index: 10;
+}
+
+nav .nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 0 50px;
+}
+
+@media (max-width: 600px) {
+  nav .nav-wrapper {
+    padding: 0 12px;
+  }
+}
+
+nav .nav-wrapper .scroll-progress {
+  width: 0;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2715ce;
+}
+
+nav .nav-wrapper .left-side-nav {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+nav .nav-wrapper .left-side-nav .menu {
+  width: 50px;
+  height: 50px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-wrapper .left-side-nav .menu img {
+  width: 32px;
+}
+
+nav .nav-wrapper .left-side-nav .text-logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  nav .nav-wrapper .left-side-nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+nav .nav-wrapper .right-side-nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-wrapper .right-side-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+nav .nav-wrapper .right-side-nav ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  height: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 16px;
+  -webkit-transition: 75ms ease-in-out;
+  transition: 75ms ease-in-out;
+  cursor: pointer;
+}
+
+nav .nav-wrapper .right-side-nav ul a:hover {
+  background-color: #000;
+}
+
+nav .nav-wrapper .right-side-nav ul a:hover li {
+  color: #fff !important;
+}
+
+nav .nav-wrapper .right-side-nav ul a li {
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  nav .nav-wrapper .right-side-nav ul {
+    display: none;
+  }
+}
+/*# sourceMappingURL=nav-style.css.map */

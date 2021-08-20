@@ -1,0 +1,14 @@
+$blue: #2715ce;
+
+@mixin fontProp($family, $weight, $size) {
+  font-family: $family, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: #000;
+}
+
+@mixin mobileView {
+  @media (max-width: 600px) {
+    @content;
+  }
+}

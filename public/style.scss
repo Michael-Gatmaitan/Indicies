@@ -1,0 +1,40 @@
+@import './mixins.scss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a, button, input[type=submit] {
+  border: none;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7ecee;
+  // overflow: hidden;
+}
+
+img {
+  user-select: none;
+}
+
+::-webkit-scrollbar { display: none; }
+
+._lang {
+  padding: 0 50px 40px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  @include fontProp('Montserrat', 800, 14px);
+  letter-spacing: 4px;
+
+  @include mobileView {
+    display: none;
+  }
+}
